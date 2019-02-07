@@ -1,7 +1,7 @@
 //require
 var express = require ("express");
 var db = require ("./models");
-var PORT = 3000;
+var PORT =  process.env.PORT ||3000;
 var axios = require ("axios");
 var mongoose = require("mongoose");
 var cheerio = require("cheerio");
