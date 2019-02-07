@@ -2,7 +2,7 @@
 
 ### mongo-scrape
 
-In this application I have used mongodb and node.js to scrape and display news articles from [teamtalk.com] (www.teamtalk.com).
+In this application I have used mongodb and node.js to scrape and display news articles from [teamtalk.com](www.teamtalk.com).
 
 Main pacakages that I have used in thi applications are :
 
