@@ -12,6 +12,14 @@ var ArticleSchema = new Schema({
   img:{
       type :String
   },
+  isSaved :{
+    type  : Boolean,
+    default : false
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  },
   note: {
     type: Schema.Types.ObjectId,
     ref: "Note"

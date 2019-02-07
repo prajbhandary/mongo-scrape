@@ -22,3 +22,7 @@ h1{
 .jumbotron{
     padding-top: 0;
 }
+
+.btn-primary{
+    margin-right: 10px;
+}

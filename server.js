@@ -20,6 +20,9 @@ mongoose.connect(MONGODB_URI, function(err) {
 });
 
 app.get("/scrape", function(req, res) {
+
+	db.Article.deleteMany({"isSaved" : false});
+
 	axios.get("https://www.teamtalk.com/").then(function(response) {
 	  var $ = cheerio.load(response.data);
   	  $(".articleList__item").each(function(i, element) {
@@ -61,6 +64,8 @@ app.get("/scrape", function(req, res) {
   app.get("/articles", function(req, res) {
 	// Grab every document in the Articles collection
 	db.Article.find({})
+	.sort('-date')
+	.limit(22)
 	  .then(function(dbArticle) {
 		// If we were able to successfully find Articles, send them back to the client
 		res.json(dbArticle);
