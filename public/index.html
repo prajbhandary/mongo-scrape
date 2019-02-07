@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+        <meta charset="UTF-8">
+        <title>News Scraper</title>
+
+        <!--External CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Welcome</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Saved Articles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">API</a>
+                    </li>
+                    <a class="btn btn-primary navbar-btn" id="scrapeBtn" href="/api/articles/scrape">Scrape New Articles!</a>
+                  </ul>
+                </div>
+              </nav>
+    
+    
+<div class="wrapper">
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>🗞️ News Scraper</h1>
+        <!--Search Parameters Div-->
+        <div class="card" id="parametersDiv">
+            <div class="card-header">
+                Scraped
+            </div>
+            <div class="card-body">
+                <form>
+                        <div id="articles"></div>
+                        <div id="notes"></div>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+
+<div class="push">
+</div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <center>Copyright 2018</center>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
